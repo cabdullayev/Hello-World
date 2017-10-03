@@ -4,20 +4,17 @@
  * and open the template in the editor.
  */
 package hello.world;
-
-/**
- *
- * @author ceyhun
- */
+import javax.swing.*;
 public class HelloWorld {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("Hi Java");
-        System.out.println("Hello Ceyhun");
+      JFrame frame=new JFrame();
+      JButton  button=new JButton("Click me");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      frame.getContentPane().add(button);
+      frame.setSize(300, 300);
+      frame.setVisible(true);
     }
     
 }
